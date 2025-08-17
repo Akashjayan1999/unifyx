@@ -1,0 +1,21 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'SF UI Text Regular';
+}
+
+.navbar {
+  height: 60px; 
+}
+
+.navbar-brand span {
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.navbar img {
+    cursor:pointer;
+  /* object-fit: cover; */
+}

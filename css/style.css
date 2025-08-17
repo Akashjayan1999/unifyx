@@ -1,0 +1,403 @@
+@font-face {
+  font-family: "SF UI Text Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("SF UI Text Regular"),
+    url("../font/SFUIText-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "SF UI Text Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("SF UI Text Italic"),
+    url("../font/SFUIText-RegularItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "SF UI Text Light";
+  font-style: normal;
+  font-weight: normal;
+  src: local("SF UI Text Light"),
+    url("../font/SFUIText-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "SF UI Text Light Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("SF UI Text Light Italic"),
+    url("../font/SFUIText-LightItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "SF UI Text Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: local("SF UI Text Medium"),
+    url("../font/SFUIText-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "SF UI Text Medium Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("SF UI Text Medium Italic"),
+    url("../font/SFUIText-MediumItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "SF UI Text Semibold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("SF UI Text Semibold"),
+    url("../font/SFUIText-Semibold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "SF UI Text Semibold Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("SF UI Text Semibold Italic"),
+    url("../font/SFUIText-SemiboldItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "SF UI Text Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("SF UI Text Bold"),
+    url("../font/SFUIText-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "SF UI Text Bold Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("SF UI Text Bold Italic"),
+    url("../font/SFUIText-BoldItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "SF UI Text Heavy";
+  font-style: normal;
+  font-weight: normal;
+  src: local("SF UI Text Heavy"),
+    url("../font/SFUIText-Heavy.woff") format("woff");
+}
+
+@font-face {
+  font-family: "SF UI Text Heavy Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("SF UI Text Heavy Italic"),
+    url("../font/SFUIText-HeavyItalic.woff") format("woff");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "SF UI Text Regular";
+}
+
+.carousel-slide {
+  position: relative;
+  height: 350px;
+  color: white;
+  background-size: cover;
+
+  display: flex;
+  align-items: center;
+  /* padding: 30px; */
+}
+
+.container-width {
+  padding: 0px 2%;
+}
+
+.carousel-overlay {
+  /* background: rgba(0, 0, 0, 0.5); */
+  /* padding: 20px; */
+  border-radius: 8px;
+  max-width: 700px;
+}
+
+.carousel-overlay h2 {
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 50px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.carousel-overlay p {
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 20px;
+  color: #ffffffe5;
+  line-height: 100%;
+  letter-spacing: -0.17px;
+}
+
+.carousel-date {
+  font-size: 25px;
+  font-weight: bold;
+  font-weight: 700;
+  font-style: Bold;
+  line-height: 30px;
+  letter-spacing: -0.17px;
+}
+
+.carousel-time {
+  font-weight: 600;
+  font-style: Semibold;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: -0.17px;
+}
+
+.carousel-subtext {
+  color: #ffffffe5;
+  margin-top: 5px;
+  font-weight: 300;
+  font-style: Light;
+  font-size: 15px;
+  line-height: 100%;
+  letter-spacing: -0.17px;
+}
+
+.owl-dots {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 5;
+}
+
+.owl-dots .owl-dot span {
+  width: 10px;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.7);
+  display: block;
+  margin: 5px 4px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.owl-dots .owl-dot.active span {
+  background: white;
+  transform: scale(1.2);
+}
+
+.carousel-1 {
+  background-image: url("/images/carousel1.jpg");
+  background-position: 0% 40%;
+}
+
+.carousel-2 {
+  background-image: url("/images/carousel2.jpg");
+  background-position: 0% 37%;
+}
+.carousel-3 {
+  background-image: url("/images/carousel3.jpg");
+  background-position: 0% 20%;
+}
+
+.board-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 15px;
+  transition: 0.3s;
+  background: white;
+  height: 100%;
+}
+
+.create-board h5 {
+  font-weight: 500;
+
+  font-style: Medium;
+  font-size: 28px;
+  line-height: 12px;
+  letter-spacing: -0.17px;
+}
+
+.create-board a {
+  font-weight: 500;
+  text-decoration: none;
+  font-style: Medium;
+  font-size: 15px;
+  line-height: 12px;
+  letter-spacing: -0.17px;
+  color: #0b4edd;
+}
+.timesheet-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border: 0.3px solid #0000004d;
+  padding: 15px;
+  padding-top: 5px;
+  max-width: 500px;
+  margin: 0 auto;
+  position: relative;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.timesheet-card:hover {
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.12);
+  /* transform: translateY(-3px); */
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 5px;
+}
+
+/* .icon-container {
+  width: 56px;
+  height: 56px;
+  background: linear-gradient(135deg, #d2691e, #b8631a);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 3px 12px rgba(210, 105, 30, 0.3); */
+/* } */
+
+.icon-container i {
+  color: white;
+  font-size: 28px;
+}
+
+.card-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.card-title {
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #000;
+}
+
+.card-description {
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.card-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.favorite-section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.favorite-text {
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.favorite-heart {
+  color: #dc2626;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.favorite-heart:hover {
+  transform: scale(1.1);
+}
+
+.share-btn {
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  background-color: #0037884d;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.share-btn:hover {
+  background-color: #8b9bb0;
+  transform: scale(1.05);
+}
+
+.share-btn i {
+  color: white;
+  font-size: 18px;
+}
+
+.share-btn::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, transparent, rgba(168, 180, 199, 0.1));
+}
+@media (max-width: 991.98px) {
+  .carousel-overlay h2 {
+    font-weight: 600;
+    font-size: 36px;
+  }
+  .carousel-overlay p {
+    font-weight: 400;
+    font-size: 16px;
+  }
+  .carousel-date {
+    font-weight: 600;
+    font-size: 20px;
+  }
+  .carousel-time {
+    font-weight: 500;
+    font-size: 16px;
+  }
+  .carousel-subtext {
+    font-weight: 200;
+    font-size: 13px;
+  }
+
+  .create-board h5 {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .carousel-overlay h2 {
+    font-weight: 600;
+    font-size: 30px;
+  }
+  .carousel-overlay p {
+    font-weight: 400;
+    font-size: 16px;
+  }
+}
