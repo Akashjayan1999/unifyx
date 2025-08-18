@@ -56,13 +56,96 @@
     </section>
     <section class="container-width">
         <div class="discover-projects">
-            <div class="discover-container-width">
+            <div class="discover-container-width d-flex flex-column justify-content-between h-100"  >
                 <div class="discover-header">
-                <h2>Discover your project task</h2>
-                <h2>Find Employee</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum has</p>
+                    <h2>Discover your project task</h2>
+                    <h2>Find Employee</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum has</p>
+                </div >
+                <div class="people-finder">
+                <div class="people-finder-container">
+                <!-- Title - Always Visible -->
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <div class="title"> <span>People</span> Finder</div>
+                    <button type="button" class="close-btn" id="closeBtn" style="display: none;">
+                        <span>&times;</span>
+                    </button>
+                </div>
+
+                <!-- Search Form -->
+                <div id="searchForm" class="search-form">
+                    <div class="row g-4 align-items-end border-cols">
+                        <div class="col-md-6 col-lg-3 ">
+                            <label for="employeeName" class="form-label">Employee Name</label>
+                            <input type="text" class="form-control" id="employeeName" value="Sam Jhone"
+                                placeholder="Enter employee name">
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <label for="employeeId" class="form-label">Employee Id</label>
+                            <input type="text" class="form-control" id="employeeId" value="EN1258"
+                                placeholder="Enter employee ID">
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <label for="projectName" class="form-label">Project Name</label>
+                            <input type="text" class="form-control" id="projectName" value="Static Website"
+                                placeholder="Enter project name">
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <button type="button" class="btn btn-search" id="searchBtn">Search</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Employee Details -->
+                <div id="employeeDetails" class="employee-details">
+                    <div class="row">
+                        <div class="col-md-9">
+                            <div class="employee-info">
+                                <div class="row">
+                                    <div class="col-xl-5 border-md-end">
+                                        <div class="detail-row row">
+                                            <div class="detail-label col-12 col-sm-6">Name</div>
+                                            <div class="detail-value col-12 col-sm-6">Sam Jhone</div>
+                                        </div>
+                                        <div class="detail-row row">
+                                            <div class="detail-label col-12 col-sm-6">Gender</div>
+                                            <div class="detail-value col-12 col-sm-6">Male</div>
+                                        </div>
+                                        <div class="detail-row row">
+                                            <div class="detail-label col-12 col-sm-6">Email :</div>
+                                            <div class="detail-value col-12 col-sm-6 text-break">samjhone@abc.com</div>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="col-sm-1">
+                                        <div class="vertical-divider"></div>
+                                    </div> -->
+                                    <div class="col-xl-7 border-md-end">
+                                        <div class="detail-row row">
+                                            <div class="detail-label col-12 col-sm-6">Work Location</div>
+                                            <div class="detail-value col-12 col-sm-6">Office Name</div>
+                                        </div>
+                                        <div class="detail-row row">
+                                            <div class="detail-label col-12  col-sm-6">Date of Joining</div>
+                                            <div class="detail-value col-12 col-sm-6">12/06/2018</div>
+                                        </div>
+                                        <div class="detail-row row">
+                                            <div class="detail-label col-12 col-sm-6">Project Id</div>
+                                            <div class="detail-value col-12 col-sm-6">EN1258</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 d-flex  align-items-center">
+                            <img src="images/profile.jpg"
+                                alt="Employee Photo" class="employee-photo">
+                        </div>
+                    </div>
                 </div>
             </div>
+            </div>
+           
+        </div>
         </div>
     </section>
 
@@ -76,7 +159,8 @@
         crossorigin="anonymous"></script>
 
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script> -->
-    <script src="js/index.js"></script>
+     <script src="js/index.js"></script>
+    <script src="js/finder.js"></script>
     <script>
         AOS.init();
     </script>
