@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UNIFYX</title>
+    <!--Bootstrap css-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Link Swiper's CSS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"> -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/common.css" rel="stylesheet" />
+    <link href="css/time-sheet.css" rel="stylesheet" />
+</head>
+
+<body class="home">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white ">
+            <div class="d-flex justify-content-between align-items-center w-100 container-width">
+
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="images/logo.png" alt="Logo" width="110" height="40" class="me-2">
+                    <!-- <span class="fw-bold text-primary">UNIFYX</span> -->
+                </a>
+
+
+                <div class="d-flex align-items-center ms-auto">
+                    <img src="images/profile.jpg" alt="Profile" class="rounded-circle" width="35" height="35">
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div class="container-width my-4 back-button ">
+            <a href="/apply-leave.html" class="text-decoration-none text-dark d-flex align-items-center">
+                <svg width="20" height="19" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M5.02481 8.71443H21V11.2857H5.02481L12.065 18.1818L10.2089 20L0 10.0001L10.2089 0L12.065 1.81818L5.02481 8.71443Z"
+                        fill="black" />
+                </svg>
+                <span class="ps-2">Back</span>
+            </a>
+        </div>
+    </section>
+
+    <section class="pb-3">
+        <div class="container-width">
+            <!-- Header -->
+            <div class="time-sheet-header">
+                <h1>Time Sheet</h1>
+                <div class="search-container-items d-flex gap-4">
+                <div class="date-navigation">
+                    <button class="date-nav-btn" onclick="changeWeek(-1)">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="16" cy="16" r="16" fill="white" />
+                            <path
+                                d="M15.8284 16.2427L18.6569 19.0711L17.2426 20.4853L13 16.2427L17.2426 12L18.6569 13.4142L15.8284 16.2427Z"
+                                fill="#003788" fill-opacity="0.8" />
+                        </svg>
+
+                    </button>
+                    <span class="date-text">August 1 - August 20, 2025</span>
+                    <button class="date-nav-btn" onclick="changeWeek(1)">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="16" cy="16" r="16" fill="white" />
+                            <path
+                                d="M16.1716 16.2427L13.3431 19.0711L14.7574 20.4853L19 16.2427L14.7574 12L13.3431 13.4142L16.1716 16.2427Z"
+                                fill="#003788" fill-opacity="0.8" />
+                        </svg>
+
+                    </button>
+                </div>
+
+                <div class="search-container">
+                    <input type="text" class="search-input" placeholder="Search projects">
+
+                    <svg class="search-icon" width="13" height="13" viewBox="0 0 13 13" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M5.75966 0C8.93899 0 11.5193 2.58033 11.5193 5.75966C11.5193 8.93899 8.93899 11.5193 5.75966 11.5193C2.58033 11.5193 0 8.93899 0 5.75966C0 2.58033 2.58033 0 5.75966 0ZM5.75966 10.2394C8.23471 10.2394 10.2394 8.23471 10.2394 5.75966C10.2394 3.28461 8.23471 1.27992 5.75966 1.27992C3.28461 1.27992 1.27992 3.28461 1.27992 5.75966C1.27992 8.23471 3.28461 10.2394 5.75966 10.2394ZM11.1899 10.2849L13 12.095L12.095 13L10.2849 11.1899L11.1899 10.2849Z"
+                            fill="black" fill-opacity="0.6" />
+                    </svg>
+
+                </div>
+                </div>
+            </div>
+
+            <!-- Projects Section -->
+            <h2 class="projects-title">Projects</h2>
+
+            <div class="projects-container">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-info">
+                            <h3>Web Development Project</h3>
+                            <p class="project-dates">August 1 - August 20, 2025</p>
+                            <p class="project-id">Project ID : EN2508</p>
+                        </div>
+                        <span class="status-badge">Approved</span>
+                    </div>
+
+                    <p class="project-description">
+                        Project Comments: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                    </p>
+
+                    <div class="time-grid">
+                        <div class="day-column">
+                            <div class="day-header">Mon</div>
+                            <div class="day-number">1</div>
+                            <div class="time-cell" onclick="editTime(this)" data-day="1">8 hrs</div>
+                        </div>
+                        <div class="day-column">
+                            <div class="day-header">Tue</div>
+                            <div class="day-number">2</div>
+                            <div class="time-cell" onclick="editTime(this)" data-day="2">8 hrs</div>
+                        </div>
+                        <div class="day-column">
+                            <div class="day-header">Wed</div>
+                            <div class="day-number">3</div>
+                            <div class="time-cell" onclick="editTime(this)" data-day="3">8 hrs</div>
+                        </div>
+                        <div class="day-column">
+                            <div class="day-header">Thu</div>
+                            <div class="day-number">4</div>
+                            <div class="time-cell" onclick="editTime(this)" data-day="4">8 hrs</div>
+                        </div>
+                        <div class="day-column">
+                            <div class="day-header">Fri</div>
+                            <div class="day-number">5</div>
+                            <div class="time-cell" onclick="editTime(this)" data-day="5">8 hrs</div>
+                        </div>
+                        <div class="day-column">
+                            <div class="day-header">Sat</div>
+                            <div class="day-number">6</div>
+                            <div class="time-cell" onclick="editTime(this)" data-day="6">8 hrs</div>
+                        </div>
+                        <div class="day-column">
+                            <div class="day-header">Sun</div>
+                            <div class="day-number">7</div>
+                            <div class="time-cell" onclick="editTime(this)" data-day="7">8 hrs</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-info">
+                            <h3>Web Development Project</h3>
+                            <p class="project-dates">August 1 - August 20, 2025</p>
+                            <p class="project-id">Project ID : EN2508</p>
+                        </div>
+                        <span class="status-badge">Approved</span>
+                    </div>
+
+                    <p class="project-description">
+                        Project Comments: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                    </p>
+
+                    <div class="time-grid">
+                        <div class="day-column">
+                            <div class="day-header">Mon</div>
+                            <div class="day-number">1</div>
+                            <div class="time-cell" onclick="editTime(this)" data-day="1">8 hrs</div>
+                        </div>
+                        <div class="day-column">
+                            <div class="day-header">Tue</div>
+                            <div class="day-number">2</div>
+                            <div class="time-cell" onclick="editTime(this)" data-day="2">8 hrs</div>
+                        </div>
+                        <div class="day-column">
+                            <div class="day-header">Wed</div>
+                            <div class="day-number">3</div>
+                            <div class="time-cell" onclick="editTime(this)" data-day="3">8 hrs</div>
+                        </div>
+                        <div class="day-column">
+                            <div class="day-header">Thu</div>
+                            <div class="day-number">4</div>
+                            <div class="time-cell" onclick="editTime(this)" data-day="4">8 hrs</div>
+                        </div>
+                        <div class="day-column">
+                            <div class="day-header">Fri</div>
+                            <div class="day-number">5</div>
+                            <div class="time-cell" onclick="editTime(this)" data-day="5">8 hrs</div>
+                        </div>
+                        <div class="day-column">
+                            <div class="day-header">Sat</div>
+                            <div class="day-number">6</div>
+                            <div class="time-cell" onclick="editTime(this)" data-day="6">8 hrs</div>
+                        </div>
+                        <div class="day-column">
+                            <div class="day-header">Sun</div>
+                            <div class="day-number">7</div>
+                            <div class="time-cell" onclick="editTime(this)" data-day="7">8 hrs</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="action-buttons">
+                <div class="left-buttons">
+                    <button class="btn-custom btn-reset" onclick="resetForm()">Reset</button>
+                    <button class="btn-custom btn-save" onclick="saveForm()">Save</button>
+                </div>
+                <button class="btn-custom btn-submit" onclick="submitForm()">Submit</button>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script> -->
+    <script src="js/time-sheet.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>
