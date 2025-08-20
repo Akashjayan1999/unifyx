@@ -121,7 +121,7 @@
 
             <div class="requests-content">
                 <!-- All Tab Content -->
-                <div id="all-content" class="tab-content active">
+                <div id="all-content" class="tab-content ">
                     <div class="row g-4">
                         <!-- Casual Leave Application -->
                         <div class="col-xl-4 col-md-6">
@@ -185,20 +185,154 @@
                 </div>
 
                 <!-- Approved Tab Content -->
-                <div id="approved-content" class="tab-content">
-                    <div class="requests-grid">
-                        <div class="request-card">
-                            <div class="request-header-text">Full Day Application</div>
-                            <div class="request-date">Friday, 22 July</div>
-                            <div class="request-leave-type request-approved">Sick Leave</div>
-                            <span class="status-badge status-approved">Approved</span>
-                        </div>
+                <div id="approved-content" class="tab-content active">
+                    <div class="filter-container">
+                        <div class="row align-items-end row-items-select">
+                            <div class="col-md-3">
+                                <label for="projectId" class="form-label">Project Id</label>
+                                <div class="select-wrapper">
+                                    <select class="form-select" id="projectId">
+                                        <option value="PNR1258" selected>PNR1258</option>
+                                        <option value="PNR1259">PNR1259</option>
+                                        <option value="PNR1260">PNR1260</option>
+                                        <option value="PNR1261">PNR1261</option>
+                                    </select>
 
-                        <div class="request-card">
-                            <div class="request-header-text">Full Day Application</div>
-                            <div class="request-date">Friday, 22 July</div>
-                            <div class="request-leave-type request-approved">Sick Leave</div>
-                            <span class="status-badge status-approved">Approved</span>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <label for="employeeId" class="form-label">Employee Id</label>
+                                <div class="select-wrapper">
+                                    <select class="form-select" id="employeeId">
+                                        <option value="EN1258258" selected>EN1258258</option>
+                                        <option value="EN1258259">EN1258259</option>
+                                        <option value="EN1258260">EN1258260</option>
+                                        <option value="EN1258261">EN1258261</option>
+                                    </select>
+
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <label for="week" class="form-label">Week</label>
+                                <div class="select-wrapper">
+                                    <select class="form-select" id="week">
+                                        <option value="10-april-17-april" selected>10 April - 17 April</option>
+                                        <option value="17-april-24-april">17 April - 24 April</option>
+                                        <option value="24-april-01-may">24 April - 01 May</option>
+                                        <option value="01-may-08-may">01 May - 08 May</option>
+                                    </select>
+
+                                </div>
+                            </div>
+                            <div class="col-md-3 btn-approval">
+                                <button class="btn btn-approve-item" id="approveAll">
+                                    Approve all
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-container mt-4">
+                        <div class="table-responsive">
+                            <table class="table  table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Request Date</th>
+                                        <th>Employee Name</th>
+                                        <th>Project Name</th>
+                                        <th>Project Id</th>
+                                        <th>Date</th>
+                                        <th>Hours</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>15 February 2025</td>
+                                        <td>Sam Jhone</td>
+                                        <td>Static Website</td>
+                                        <td>PNR1258</td>
+                                        <td>15 February 2025</td>
+                                        <td>6hrs</td>
+                                        <td>
+                                             <button class="btn btn-approve-table me-2">Approve</button>
+                                            <button class="btn  btn-reject-table">Reject</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>15 February 2025</td>
+                                        <td>Sam Jhone</td>
+                                        <td>Static Website</td>
+                                        <td>PNR1258</td>
+                                        <td>15 February 2025</td>
+                                        <td>6hrs</td>
+                                        <td>
+                                             <button class="btn btn-approve-table me-2">Approve</button>
+                                            <button class="btn btn-reject-table">Reject</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>15 February 2025</td>
+                                        <td>Sam Jhone</td>
+                                        <td>Static Website</td>
+                                        <td>PNR1258</td>
+                                        <td>15 February 2025</td>
+                                        <td>6hrs</td>
+                                        <td>
+                                            <button class="btn btn-approve-table me-2">Approve</button>
+                                            <button class="btn btn-reject-table">Reject</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>15 February 2025</td>
+                                        <td>Sam Jhone</td>
+                                        <td>Static Website</td>
+                                        <td>PNR1258</td>
+                                        <td>15 February 2025</td>
+                                        <td>6hrs</td>
+                                        <td>
+                                             <button class="btn btn-approve-table me-2">Approve</button>
+                                            <button class="btn btn-reject-table">Reject</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>15 February 2025</td>
+                                        <td>Sam Jhone</td>
+                                        <td>Static Website</td>
+                                        <td>PNR1258</td>
+                                        <td>15 February 2025</td>
+                                        <td>6hrs</td>
+                                        <td>
+                                            <button class="btn btn-approve-table me-2">Approve</button>
+                                            <button class="btn btn-reject-table">Reject</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- Reject Modal -->
+                    <div class="modal fade" id="rejectModal" tabindex="-1" aria-labelledby="rejectModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="rejectModalLabel">Reject this Project ?</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum has been</p>
+                                    <label for="rejectComment">Add Comment</label>
+                                    <textarea id="rejectComment"
+                                        ></textarea>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-cancel" data-bs-dismiss="modal">Cancel</button>
+                                    <button type="button" class="btn btn-reject-confirm"
+                                        id="confirmReject">Reject</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
