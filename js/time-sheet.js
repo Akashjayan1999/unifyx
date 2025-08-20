@@ -20,52 +20,7 @@
             });
         });
         
-        // Edit time functionality
-        function editTime(cell) {
-            if (cell.classList.contains('editing')) return;
-            
-            const currentText = cell.textContent;
-            cell.classList.add('editing');
-            
-            const input = document.createElement('input');
-            input.type = 'text';
-            input.className = 'time-input';
-            input.value = currentText;
-            
-            cell.textContent = '';
-            cell.appendChild(input);
-            
-            input.focus();
-            input.select();
-            
-            function finishEdit() {
-                let value = input.value.trim();
-                if (value && !value.includes('hrs') && !isNaN(parseFloat(value))) {
-                    value = value + ' hrs';
-                }
-                
-                cell.textContent = value || '8 hrs';
-                cell.classList.remove('editing');
-                
-                if (value && value !== '8 hrs') {
-                    cell.classList.add('editable');
-                } else {
-                    cell.classList.remove('editable');
-                }
-            }
-            
-            input.addEventListener('blur', finishEdit);
-            input.addEventListener('keydown', function(e) {
-                if (e.key === 'Enter' || e.key === 'Tab') {
-                    e.preventDefault();
-                    finishEdit();
-                }
-                if (e.key === 'Escape') {
-                    cell.textContent = currentText;
-                    cell.classList.remove('editing');
-                }
-            });
-        }
+        
         
         // Week navigation
         let currentWeekStart = new Date('2025-08-01');
@@ -104,7 +59,7 @@
                 cell.textContent = '8 hrs';
                 cell.classList.remove('editable');
             });
-            showNotification('Form reset successfully!', 'info');
+            // showNotification('Form reset successfully!', 'info');
         }
         
         function saveForm() {
@@ -133,9 +88,9 @@
             
             if (projectData.length > 0) {
                 console.log('Saving data:', projectData);
-                showNotification('Time entries saved successfully!', 'success');
+                // showNotification('Time entries saved successfully!', 'success');
             } else {
-                showNotification('No modified time entries to save.', 'warning');
+                // showNotification('No modified time entries to save.', 'warning');
             }
         }
         
@@ -147,41 +102,41 @@
             
             if (hasModifiedEntries) {
                 console.log('Submitting timesheet...');
-                showNotification('Timesheet submitted successfully!', 'success');
+                // showNotification('Timesheet submitted successfully!', 'success');
             } else {
-                showNotification('Please modify time entries before submitting.', 'warning');
+                // showNotification('Please modify time entries before submitting.', 'warning');
             }
         }
         
-        function showNotification(message, type) {
-            const existing = document.querySelector('.notification');
-            if (existing) {
-                existing.remove();
-            }
+        // function showNotification(message, type) {
+        //     const existing = document.querySelector('.notification');
+        //     if (existing) {
+        //         existing.remove();
+        //     }
             
-            const notification = document.createElement('div');
-            notification.className = `alert alert-${type === 'success' ? 'success' : type === 'warning' ? 'warning' : 'info'} notification`;
-            notification.style.cssText = `
-                position: fixed;
-                top: 20px;
-                right: 20px;
-                z-index: 1050;
-                min-width: 300px;
-                box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-                border-radius: 8px;
-            `;
-            notification.innerHTML = `
-                <div class="d-flex justify-content-between align-items-center">
-                    <span>${message}</span>
-                    <button type="button" class="btn-close" onclick="this.parentElement.parentElement.remove()"></button>
-                </div>
-            `;
+        //     const notification = document.createElement('div');
+        //     notification.className = `alert alert-${type === 'success' ? 'success' : type === 'warning' ? 'warning' : 'info'} notification`;
+        //     notification.style.cssText = `
+        //         position: fixed;
+        //         top: 20px;
+        //         right: 20px;
+        //         z-index: 1050;
+        //         min-width: 300px;
+        //         box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        //         border-radius: 8px;
+        //     `;
+        //     notification.innerHTML = `
+        //         <div class="d-flex justify-content-between align-items-center">
+        //             <span>${message}</span>
+        //             <button type="button" class="btn-close" onclick="this.parentElement.parentElement.remove()"></button>
+        //         </div>
+        //     `;
             
-            document.body.appendChild(notification);
+        //     document.body.appendChild(notification);
             
-            setTimeout(() => {
-                if (notification.parentNode) {
-                    notification.remove();
-                }
-            }, 3000);
-        }
+        //     setTimeout(() => {
+        //         if (notification.parentNode) {
+        //             notification.remove();
+        //         }
+        //     }, 3000);
+        // }
