@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UNIFYX</title>
+    <!--Bootstrap css-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Link Swiper's CSS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"> -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/common.css" rel="stylesheet" />
+    <link href="css/time-sheet-form.css" rel="stylesheet" />
+</head>
+
+<body class="home">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white ">
+            <div class="d-flex justify-content-between align-items-center w-100 container-width">
+
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="images/logo.png" alt="Logo" width="110" height="40" class="me-2">
+                    <!-- <span class="fw-bold text-primary">UNIFYX</span> -->
+                </a>
+
+
+                <div class="d-flex align-items-center ms-auto">
+                    <img src="images/profile.jpg" alt="Profile" class="rounded-circle" width="35" height="35">
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="container-width ">
+        <div class="d-flex justify-content-between align-items-center">
+            <div class=" my-4 back-button ">
+                <a href="/apply-leave.html" class="text-decoration-none text-dark d-flex align-items-center">
+                    <svg width="20" height="19" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M5.02481 8.71443H21V11.2857H5.02481L12.065 18.1818L10.2089 20L0 10.0001L10.2089 0L12.065 1.81818L5.02481 8.71443Z"
+                            fill="black" />
+                    </svg>
+                    <span class="ps-2">Back</span>
+                </a>
+            </div>
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.42857 9.42857V0H12.5714V9.42857H22V12.5714H12.5714V22H9.42857V12.5714H0V9.42857H9.42857Z"
+                    fill="#003788" />
+            </svg>
+        </div>
+    </section>
+
+    <section >
+        <div class="form-container mt-3">
+            <div class="form-header">
+                <div class="left-section">
+                    <div class="project-name">Project Name</div>
+                    <div class="apply-checkbox">
+                        <input type="checkbox" id="applyToAll">
+                        <label for="applyToAll">Apply to all</label>
+                    </div>
+                </div>
+                <div class="right-section">
+                    <div class="date-info">Monday, 01/08</div>
+                    <a href="#" class="remove-link">Remove Task</a>
+                </div>
+            </div>
+
+            <form>
+                <div class="form-group">
+                    <label class="form-label">Project Task</label>
+                    <input type="text" class="form-control" placeholder="Select Task" value="">
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Work Location</label>
+                    <select class="form-select">
+                        <option selected>Work From home</option>
+                        <option>Office</option>
+                        <option>Client site</option>
+                        <option>Remote</option>
+                    </select>
+                </div>
+
+                <div class="time-section">
+                    <div class="time-controls">
+                        <div class="time-control">
+                            <span class="time-label">From :</span>
+                            <div class="time-value">5:45</div>
+                        </div>
+                        <div class="time-control">
+                            <span class="time-label">To</span>
+                            <div class="time-value">17:30</div>
+                        </div>
+                        <div class="time-control">
+                            <span class="time-label">Duration</span>
+                            <div class="time-value">12</div>
+                        </div>
+                    </div>
+
+                    <div class="slider-container">
+                        <div class="slider-track">
+                            <div class="slider-progress"></div>
+                            <div class="slider-handle start"></div>
+                            <div class="slider-handle end"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="comment-section">
+                    <label class="form-label mb-2">Enter Comment</label>
+                    <textarea class="form-control comment-textarea" placeholder="Enter your comment here"></textarea>
+                </div>
+
+                <button type="submit" class="btn submit-btn">Submit</button>
+            </form>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script> -->
+    <script src="js/time-sheet-form.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>
