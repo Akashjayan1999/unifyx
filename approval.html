@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UNIFYX</title>
+    <!--Bootstrap css-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Link Swiper's CSS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"> -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/common.css" rel="stylesheet" />
+    <link href="css/approval.css" rel="stylesheet" />
+</head>
+
+<body class="home">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white ">
+            <div class="d-flex justify-content-between align-items-center w-100 container-width">
+
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="images/logo.png" alt="Logo" width="110" height="40" class="me-2">
+                    <!-- <span class="fw-bold text-primary">UNIFYX</span> -->
+                </a>
+
+
+                <div class="d-flex align-items-center ms-auto">
+                    <img src="images/profile.jpg" alt="Profile" class="rounded-circle" width="35" height="35">
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div class="container-width my-4 back-button d-flex justify-content-between ">
+            <div title>
+                <h2 class="leave-mang-title">Approvals</h2>
+            </div>
+            <a href="/index.html" class="text-decoration-none text-dark d-flex align-items-center">
+                <svg width="20" height="19" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M5.02481 8.71443H21V11.2857H5.02481L12.065 18.1818L10.2089 20L0 10.0001L10.2089 0L12.065 1.81818L5.02481 8.71443Z"
+                        fill="black" />
+                </svg>
+                <span class="ps-2">Back</span>
+            </a>
+        </div>
+    </section>
+
+
+
+    <section class="mb-3">
+        <div class="container-width mt-5">
+
+
+            <div class="tabs-container d-flex gap-3 w-100">
+                <ul class="custom-tabs w-100">
+                    <li class="custom-tab active" onclick="showTab('all', this)"><svg width="42" height="40"
+                            viewBox="0 0 42 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="41.9355" height="40" rx="8" fill="#CB7014" />
+                            <path
+                                d="M15.0782 14.9681C16.6924 13.7365 18.7399 13 20.9677 13C23.1955 13 25.243 13.7365 26.8572 14.9681L28.381 13.5147L29.8636 14.9289L28.3399 16.3823C29.6311 17.922 30.4032 19.875 30.4032 22C30.4032 26.9706 26.1788 31 20.9677 31C15.7566 31 11.5322 26.9706 11.5322 22C11.5322 19.875 12.3043 17.922 13.5956 16.3823L12.0719 14.9289L13.5545 13.5147L15.0782 14.9681ZM20.9677 29C25.0208 29 28.3064 25.866 28.3064 22C28.3064 18.134 25.0208 15 20.9677 15C16.9147 15 13.629 18.134 13.629 22C13.629 25.866 16.9147 29 20.9677 29ZM22.0161 21H25.1613L19.9193 27.5V23H16.7742L22.0161 16.4952V21ZM16.7742 10H25.1613V12H16.7742V10Z"
+                                fill="white" />
+                        </svg>
+                        Timesheet Management</li>
+                    <li class="custom-tab" onclick="showTab('approved', this)">
+                        <svg width="43" height="40" viewBox="0 0 43 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="0.822754" width="41.9355" height="40" rx="8" fill="#169641" />
+                            <path
+                                d="M29.1292 30H12.355C11.776 30 11.3066 29.5523 11.3066 29V11C11.3066 10.4477 11.776 10 12.355 10H29.1292C29.7082 10 30.1776 10.4477 30.1776 11V29C30.1776 29.5523 29.7082 30 29.1292 30ZM28.0808 28V12H13.4034V28H28.0808ZM15.5002 14H19.6937V18H15.5002V14ZM15.5002 20H25.9841V22H15.5002V20ZM15.5002 24H25.9841V26H15.5002V24ZM21.7905 15H25.9841V17H21.7905V15Z"
+                                fill="white" />
+                        </svg>
+
+                        Leave Management
+                    </li>
+                    <li class="custom-tab" onclick="showTab('pending', this)"><svg width="43" height="40"
+                            viewBox="0 0 43 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="0.822754" width="41.9355" height="40" rx="8" fill="#008080" />
+                            <path
+                                d="M29.1292 30H12.355C11.776 30 11.3066 29.5523 11.3066 29V11C11.3066 10.4477 11.776 10 12.355 10H29.1292C29.7082 10 30.1776 10.4477 30.1776 11V29C30.1776 29.5523 29.7082 30 29.1292 30ZM28.0808 28V12H13.4034V28H28.0808ZM15.5002 14H19.6937V18H15.5002V14ZM15.5002 20H25.9841V22H15.5002V20ZM15.5002 24H25.9841V26H15.5002V24ZM21.7905 15H25.9841V17H21.7905V15Z"
+                                fill="white" />
+                        </svg>
+                        Expense Reimbursement
+                    </li>
+                    <li class="">
+                        <div>
+                            <svg class="prev-arrow" width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="20" cy="20" r="20" fill="#003788" fill-opacity="0.8" />
+                                <path
+                                    d="M16.5341 18.5922L20.6958 14.4305L19.5986 13.3333L13.5637 19.3681L19.5986 25.4028L20.6958 24.3056L16.5341 20.1439H25.9775V18.5922H16.5341Z"
+                                    fill="white" />
+                            </svg>
+                            <svg class="next-arrow" width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="20" cy="20" r="20" fill="#003788" fill-opacity="0.8" />
+                                <path
+                                    d="M22.7765 18.5922L18.6148 14.4305L19.712 13.3333L25.7468 19.3681L19.712 25.4028L18.6148 24.3056L22.7765 20.1439H13.333V18.5922H22.7765Z"
+                                    fill="white" />
+                            </svg>
+
+
+
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="requests-content">
+                <!-- All Tab Content -->
+                <div id="all-content" class="tab-content active">
+                    <div class="row g-4">
+                        <!-- Casual Leave Application -->
+                        <div class="col-xl-4 col-md-6">
+                            <div class="leave-card">
+                                <div class="leave-header">
+                                    <h6 class="mb-0">Full day application</h6>
+                                    <small class="date-text">Friday 22, July</small>
+                                </div>
+                                <div class="leave-body">
+                                    
+                                    <div class="button-items">
+                                        <div class="leave-type ">Casual Leave</div>
+                                        <button class="btn btn-reject flex-fill">Reject</button>
+                                        <button class="btn btn-approve flex-fill">Approve</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Flexi Leave Application -->
+                        <div class="col-xl-4 col-md-6">
+                            <div class="leave-card">
+                                <div class="leave-header">
+                                    <h6 class="mb-0">Full day application</h6>
+                                    <small class="date-text">Friday 22, July</small>
+                                </div>
+                                <div class="leave-body">
+                                
+                                    <div class="button-items">
+                                        <div class="leave-type">Flexi Leave</div>
+                                        <button class="btn btn-reject flex-fill">Reject</button>
+                                        <button class="btn btn-approve flex-fill item-center">Approve</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Sick Leave Application -->
+                        <div class="col-xl-4 col-md-6">
+                            <div class="leave-card">
+                                <div class="leave-header">
+                                    <h6 class="mb-0">Full day application</h6>
+                                    <small class="date-text">Friday 22, July</small>
+                                </div>
+                                <div class="leave-body">
+                                    <div class="button-items">
+                                        <div class="leave-type">Flexi Leave</div>
+                                        <button class="btn btn-reject flex-fill">Reject</button>
+                                        <button class="btn btn-approve flex-fill">Approve</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Approved Tab Content -->
+                <div id="approved-content" class="tab-content">
+                    <div class="requests-grid">
+                        <div class="request-card">
+                            <div class="request-header-text">Full Day Application</div>
+                            <div class="request-date">Friday, 22 July</div>
+                            <div class="request-leave-type request-approved">Sick Leave</div>
+                            <span class="status-badge status-approved">Approved</span>
+                        </div>
+
+                        <div class="request-card">
+                            <div class="request-header-text">Full Day Application</div>
+                            <div class="request-date">Friday, 22 July</div>
+                            <div class="request-leave-type request-approved">Sick Leave</div>
+                            <span class="status-badge status-approved">Approved</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pending Tab Content -->
+                <div id="pending-content" class="tab-content">
+                    <div class="text-center text-muted py-4">
+                        <p>No pending leave requests</p>
+                    </div>
+                </div>
+
+                <!-- Rejected Tab Content -->
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script> -->
+    <script src="js/approval.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>

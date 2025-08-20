@@ -412,3 +412,7 @@
     font-size: 16px;
   }
 }
+
+.custom-tab.active li{
+  color:#000 !important
+}
