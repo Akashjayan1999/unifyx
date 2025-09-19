@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UNIFYX</title>
+    <!--Bootstrap css-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Link Swiper's CSS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"> -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/common.css" rel="stylesheet" />
+    <link href="css/project-mapping.css" rel="stylesheet" />
+</head>
+
+<body class="home">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white ">
+            <div class="d-flex justify-content-between align-items-center w-100 container-width">
+
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="images/logo.png" alt="Logo" width="110" height="40" class="me-2">
+                    <!-- <span class="fw-bold text-primary">UNIFYX</span> -->
+                </a>
+
+
+                <div class="d-flex align-items-center ms-auto">
+                    <img src="images/profile.jpg" alt="Profile" class="rounded-circle" width="35" height="35">
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div class="container-width my-4 back-button d-flex justify-content-between ">
+            <div>
+                <h2 class="Proj_mapp-title">Project Mapping</h2>
+            </div>
+            <a href="/index.html" class="text-decoration-none text-dark d-flex align-items-center">
+                <svg width="20" height="19" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M5.02481 8.71443H21V11.2857H5.02481L12.065 18.1818L10.2089 20L0 10.0001L10.2089 0L12.065 1.81818L5.02481 8.71443Z"
+                        fill="black" />
+                </svg>
+                <span class="ps-2">Back</span>
+            </a>
+        </div>
+    </section>
+
+    <section class="pb-3">
+        <div class="container-width mt-4">
+
+
+
+
+            <div class="requests-content">
+
+
+                <!-- Approved Tab Content -->
+                <div id="all-content" class="tab-content active">
+                    <div class="form-container row">
+                        <form id="employeeWorkForm" class="col-lg-6">
+                            <!-- <div class="row form-row g-4">
+                                <div class="col-md-6">
+                                    <label for="employeeName" class="form-label">Employee Name</label>
+                                    <input type="text" class="form-control" id="employeeName" value="Sam jhone"
+                                        required>
+
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="workLocation" class="form-label">Work Location</label>
+                                    <input type="text" class="form-control" id="workLocation" value="Work From Home"
+                                        required>
+                                </div>
+                            </div> -->
+                            <div class="main-section">
+                                <div class="row form-row g-2">
+                                    <div class="col-12">
+                                        <label for="project" class="form-label">Select Project</label>
+                                        <select class="form-select" id="projectId" required>
+                                            <option value="">Select Project</option>
+                                            <option value="PNR1258" selected>E-commerce website</option>
+                                            <option value="PNR1259">PNR1259</option>
+                                            <option value="PNR1260">PNR1260</option>
+                                            <option value="PNR1261">PNR1261</option>
+                                        </select>
+
+                                    </div>
+                                </div>
+
+                                <div class="row form-row g-2">
+                                    <div class="col-md-6">
+                                        <label for="employee" class="form-label">Search Employee</label>
+                                        <input type="text" class="form-control" id="employee" value="Jhone Sam"
+                                            required>
+
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="employeeId" class="form-label">Employee Id</label>
+                                        <div class="date-input-group">
+                                            <input type="text" class="form-control" id="employeeId" value="EN1258258"
+                                                required>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="row form-row g-2">
+                                    <div class="col-md-6">
+                                        <label for="startDate" class="form-label">Work End Date</label>
+                                        <div class="date-input-group">
+                                            <input type="date" class="form-control" id="startDate" value="2024-02-03"
+                                                required>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="EndDate" class="form-label">Work End Date</label>
+                                        <div class="date-input-group">
+                                            <input type="date" class="form-control" id="EndDate" value="2024-02-07"
+                                                required>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="row form-row g-2">
+                                    <div class="col-12">
+                                        <div class="search-container">
+                                            <input type="text" class="search-input" placeholder="Search projects">
+
+                                            <svg class="search-icon cursor-pointer" width="21" height="21"
+                                                viewBox="0 0 21 21" fill="none" id="searchInput"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M9 0C13.968 0 18 4.032 18 9C18 13.968 13.968 18 9 18C4.032 18 0 13.968 0 9C0 4.032 4.032 0 9 0ZM9 16C12.8675 16 16 12.8675 16 9C16 5.1325 12.8675 2 9 2C5.1325 2 2 5.1325 2 9C2 12.8675 5.1325 16 9 16ZM17.4853 16.0711L20.3137 18.8995L18.8995 20.3137L16.0711 17.4853L17.4853 16.0711Z"
+                                                    fill="black" fill-opacity="0.8" />
+                                            </svg>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div id="hidesectionContainer" class="search-results scrollable-items">
+                                <div class="row form-row g-2">
+                                    <div class="col-12">
+                                        <label for="project" class="form-label">Employee Details</label>
+
+                                        <div class="employee-card">
+                                            <div class="row">
+                                                <!-- Left Column -->
+                                                <div class="col-sm-6 border-right-style">
+                                                    <div class="d-flex align-items-center flex-wrap mb-3">
+                                                        <span class="info-label">Employee Name</span>
+                                                        <span class="colon">:</span>
+                                                        <span class="info-value">Jhone Sam</span>
+                                                    </div>
+                                                    <div class="d-flex align-items-center flex-wrap mb-3">
+                                                        <span class="info-label">Employee Id</span>
+                                                        <span class="colon">:</span>
+                                                        <span class="info-value">EN1258258</span>
+                                                    </div>
+                                                    <div class="d-flex align-items-center flex-wrap">
+                                                        <span class="info-label">Employee Role</span>
+                                                        <span class="colon">:</span>
+                                                        <span class="info-value">Backend-Dev</span>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Right Column -->
+                                                <div
+                                                    class="col-sm-6 border-style d-flex flex-column align-items-sm-center">
+                                                    <div>
+                                                        <div class="d-flex align-items-center  flex-wrap mb-3">
+                                                            <span class="info-label">Email id</span>
+                                                            <span class="colon">:</span>
+                                                            <span class="info-value">Jhonesam@gmail.com</span>
+                                                        </div>
+                                                        <div class="d-flex align-items-center flex-wrap mb-3">
+                                                            <span class="info-label">Contact</span>
+                                                            <span class="colon">:</span>
+                                                            <span class="info-value">+91 8603245688</span>
+                                                        </div>
+                                                        <div class="d-flex align-items-center flex-wrap">
+                                                            <span class="info-label">Employee cost</span>
+                                                            <span class="colon">:</span>
+                                                            <span class="info-value">115USD</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row form-row g-2">
+                                    <div class="col-12">
+                                        <label for="project" class="form-label">Project Lists</label>
+
+                                        <div class="employee-card pb-0">
+                                            <div class="row">
+                                                <!-- Toggle Arrow -->
+                                                <svg id="toggleIcon" class="drop-icon" width="14" height="9"
+                                                    viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                    data-bs-toggle="collapse" data-bs-target=".project-collapse">
+                                                    <path
+                                                        d="M6.76888 3.00849L12.0337 8.27319L13.5379 6.76899L6.76888 -1.90735e-06L0 6.76899L1.5042 8.27319L6.76888 3.00849Z"
+                                                        fill="black" fill-opacity="0.5" />
+                                                </svg>
+
+                                                <!-- Left Column -->
+                                                <div class="col-sm-6">
+                                                    <!-- Always Visible -->
+                                                    <div class="d-flex align-items-center flex-wrap mb-3">
+                                                        <span class="info-label">Project Name</span>
+                                                        <span class="colon">:</span>
+                                                        <span class="info-value">E-commerce website</span>
+                                                    </div>
+
+                                                    <!-- Hidden by default -->
+                                                    <div class="collapse project-collapse" id="projectDetails">
+                                                        <div class="d-flex align-items-center flex-wrap mb-3">
+                                                            <span class="info-label">Project Code</span>
+                                                            <span class="colon">:</span>
+                                                            <span class="info-value">E-854129</span>
+                                                        </div>
+                                                        <div class="d-flex align-items-center flex-wrap mb-3">
+                                                            <span class="info-label">Proj Start date</span>
+                                                            <span class="colon">:</span>
+                                                            <span class="info-value">03-02-2024</span>
+                                                        </div>
+                                                        <div class="d-flex align-items-center flex-wrap mb-3">
+                                                            <span class="info-label">Proj End date</span>
+                                                            <span class="colon">:</span>
+                                                            <span class="info-value">07-02-2024</span>
+                                                        </div>
+                                                        <div class="d-flex align-items-center flex-wrap mb-3">
+                                                            <span class="info-label">Project Owner</span>
+                                                            <span class="colon">:</span>
+                                                            <span class="info-value">Jacob jhone</span>
+                                                        </div>
+                                                        <div class="d-flex align-items-center flex-wrap mb-3">
+                                                            <span class="info-label">Owner Contact</span>
+                                                            <span class="colon">:</span>
+                                                            <span class="info-value">+91 9425632588</span>
+                                                        </div>
+                                                        <div class="d-flex align-items-center flex-wrap">
+                                                            <span class="info-label">Owner Email</span>
+                                                            <span class="colon">:</span>
+                                                            <span class="info-value">jacobsam@gmail.com</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- Right Column -->
+                                                <div class="col-sm-6 d-flex flex-column align-items-sm-center">
+                                                    <!-- Always Visible -->
+                                                    <div class="collapse project-collapse" id="projectDetails">
+                                                        <div
+                                                            class="d-flex align-items-center allocation flex-wrap mb-3">
+                                                            <span class="info-label">Allocation Start</span>
+                                                            <span class="colon">:</span>
+                                                            <span class="info-value">12-02-2024</span>
+                                                        </div>
+
+                                                        <!-- Hidden by default -->
+
+                                                        <div class="d-flex align-items-center flex-wrap mb-3">
+                                                            <span class="info-label">Allocation End</span>
+                                                            <span class="colon">:</span>
+                                                            <span class="info-value">18-02-2024</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="row form-row g-2">
+                                    <div class="col-12">
+                                        <label for="project" class="form-label">Allocation Percentage</label>
+                                        <select class="form-select" id="projectId" required>
+                                            <option value="">Select Percentage</option>
+                                            <option value="10">40%</option>
+                                            <option value="20">40%</option>
+                                            <option value="30" selected>30%</option>
+                                            <option value="40">40%</option>
+                                            <option value="50">50%</option>
+                                            <option value="60">60%</option>
+                                            <option value="70">70%</option>
+                                            <option value="80">80%</option>
+                                            <option value="90">90%</option>
+                                            <option value="100">100%</option>
+                                        </select>
+
+                                    </div>
+                                </div>
+                                <div class="row form-row g-2">
+                                    <div class="col-12">
+                                        <label for="project" class="form-label">Allocation cost</label>
+                                        <select class="form-select" id="projectId" required>
+                                            <option value="">Select cost</option>
+
+                                            <option value="100">100USD</option>
+                                            <option value="115" selected>115USD</option>
+                                            <option value="200">200USD</option>
+                                            <option value="300">300USD</option>
+                                        </select>
+
+                                    </div>
+                                </div>
+
+                                <div class="row form-row g-2">
+                                    <div class="col-md-6">
+                                        <label for="startDate" class="form-label">Work End Date</label>
+                                        <div class="date-input-group">
+                                            <input type="date" class="form-control" id="startDate" value="2024-02-03"
+                                                required>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="EndDate" class="form-label">Work End Date</label>
+                                        <div class="date-input-group">
+                                            <input type="date" class="form-control" id="EndDate" value="2024-02-07"
+                                                required>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="d-flex button-group">
+                                    <button id="buttonClickIitem" type="button" class="btn btn-secondary">
+                                        Allocate
+                                    </button>
+
+                                </div>
+                            </div>
+                        </form>
+<div class="col-lg-6">
+                            <div id="noFound" class="not-found d-flex  justify-content-center">
+                                No Resource found Allocated
+                            </div>
+                            <div id="card-container-items" class="row form-row g-2 hide pt-3 pt-lg-0">
+                                <div class="col-12">
+                                    <label for="EndDate" class="form-label">Allocated Lists</label>
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="row align-items-stretch"> 
+
+                                               
+                                                <div class="col-md-8 col-12">
+                                                    <div class="d-flex align-items-center mb-2">
+                                                        <div class="avatar me-2">GJ</div>
+                                                        <h6 class="mb-0 card-title">George Joji</h6>
+                                                    </div>
+
+                                                    <p class="mb-1">Project : E - Commerce Website</p>
+                                                    <p class="mb-1">Allocation Percentage : 30%</p>
+                                                    <p class="mb-1">Start Date : 03-02-2024</p>
+                                                    <p class="mb-1">End Date : 07-02-2024</p>
+                                                </div>
+
+                                               
+                                                <div
+                                                    class="col-md-4 col-12 d-flex flex-column justify-content-between align-items-md-end text-start mt-3 mt-md-0">
+                                                    <p class="mb-2 ">Allocated Cost : 115USD</p>
+                                                    <div>
+                                                    <span class="status-badge">Allocated</span>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card mt-3">
+                                        <div class="card-body">
+                                            <div class="row align-items-stretch"> 
+
+                                               
+                                                <div class="col-md-8 col-12">
+                                                    <div class="d-flex align-items-center mb-2">
+                                                        <div class="avatar me-2">GJ</div>
+                                                        <h6 class="mb-0 card-title">George Joji</h6>
+                                                    </div>
+
+                                                    <p class="mb-1">Project : E - Commerce Website</p>
+                                                    <p class="mb-1">Allocation Percentage : 30%</p>
+                                                    <p class="mb-1">Start Date : 03-02-2024</p>
+                                                    <p class="mb-1">End Date : 07-02-2024</p>
+                                                </div>
+
+                                               
+                                                <div
+                                                    class="col-md-4 col-12 d-flex flex-column justify-content-between align-items-md-end text-start mt-3 mt-md-0">
+                                                    <p class="mb-2 ">Allocated Cost : 115USD</p>
+                                                    <div>
+                                                    <span class="status-badge">Allocated</span>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card mt-3">
+                                        <div class="card-body">
+                                            <div class="row align-items-stretch"> 
+
+                                               
+                                                <div class="col-md-8 col-12">
+                                                    <div class="d-flex align-items-center mb-2">
+                                                        <div class="avatar me-2">GJ</div>
+                                                        <h6 class="mb-0 card-title">George Joji</h6>
+                                                    </div>
+
+                                                    <p class="mb-1">Project : E - Commerce Website</p>
+                                                    <p class="mb-1">Allocation Percentage : 30%</p>
+                                                    <p class="mb-1">Start Date : 03-02-2024</p>
+                                                    <p class="mb-1">End Date : 07-02-2024</p>
+                                                </div>
+
+                                               
+                                                <div
+                                                    class="col-md-4 col-12 d-flex flex-column justify-content-between align-items-md-end text-start mt-3 mt-md-0">
+                                                    <p class="mb-2 ">Allocated Cost : 115USD</p>
+                                                    <div>
+                                                    <span class="status-badge">Allocated</span>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script> -->
+    <script src="js/project-mapping.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>
